@@ -1,0 +1,26 @@
+<header>
+  <h1 class="one">
+    EXAM &nbsp;
+    RESULT
+  </h1>
+  <p>Check your results here</p>
+
+<table id="marrk">
+  <tr>
+    <th *ngFor="let column of headers">
+      {{ column }}
+    </th>
+  </tr>
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let column of headers">
+      {{ row[column] }}
+    </td>
+  </tr>
+</table>
+</header>
+<button>NEXT&rarr;</button>
+
+
+
+ 
+
